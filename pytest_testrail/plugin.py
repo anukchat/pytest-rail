@@ -215,7 +215,7 @@ class PyTestRailPlugin(object):
             test_parametrize = item.callspec.params
         else:
             test_parametrize = None
-        comment = rep.longrepr
+        comment = '' if rep.longrepr==None else rep.longrepr.reprcrash.message
         if item.get_closest_marker(TESTRAIL_DEFECTS_PREFIX):
             defectids = item.get_closest_marker(TESTRAIL_DEFECTS_PREFIX).kwargs.get('defect_ids')
         if item.get_closest_marker(TESTRAIL_PREFIX):
