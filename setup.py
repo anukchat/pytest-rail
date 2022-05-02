@@ -10,7 +10,7 @@ setup(
     name='pytest-rail',
     description='pytest plugin for creating TestRail runs and adding results',
     long_description=read_file('README.rst'),
-    version='1.0.4',
+    version='1.0.5',
     author='Anukool Chaturvedi',
     author_email='chaturvedianukool@gmail.com',
     url='http://github.com/anukchat/pytest-rail/',
