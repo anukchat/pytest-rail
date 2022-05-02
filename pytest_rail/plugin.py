@@ -80,7 +80,7 @@ def testrail(*ids):
 
     :return pytest.mark:
     """
-    deprecation_msg = ('pytest_testrail: the @testrail decorator is deprecated and will be removed. Please use the '
+    deprecation_msg = ('pytest_rail: the @testrail decorator is deprecated and will be removed. Please use the '
                        '@pytestrail.case decorator instead.')
     warnings.warn(deprecation_msg, DeprecatedTestDecorator)
     return pytestrail.case(*ids)
@@ -164,7 +164,7 @@ class PyTestRailPlugin(object):
 
     def pytest_report_header(self, config, startdir):
         """ Add extra-info in header """
-        message = 'pytest-testrail: '
+        message = 'pytest-rail: '
         if self.testplan_id:
             message += 'existing testplan #{} selected'.format(self.testplan_id)
         elif self.testrun_id:
@@ -301,7 +301,6 @@ class PyTestRailPlugin(object):
         # Results are sorted by 'case_id' and by 'status_id' (worst result at the end)
 
         # Comment sort by status_id due to issue with pytest-rerun failures,
-        # for details refer to issue https://github.com/allankp/pytest-testrail/issues/100
         # self.results.sort(key=itemgetter('status_id'))
         self.results.sort(key=itemgetter('case_id'))
 

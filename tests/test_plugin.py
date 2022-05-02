@@ -3,9 +3,9 @@ from datetime import datetime
 from freezegun import freeze_time
 from mock import call, create_autospec
 import pytest
-from pytest_testrail import plugin
-from pytest_testrail.plugin import PyTestRailPlugin, TESTRAIL_TEST_STATUS
-from pytest_testrail.testrail_api import APIClient
+from pytest_rail import plugin
+from pytest_rail.plugin import PyTestRailPlugin, TESTRAIL_TEST_STATUS
+from pytest_rail.testrail_api import APIClient
 
 pytest_plugins = "pytester"
 
@@ -14,7 +14,7 @@ FAKE_NOW = datetime(2015, 1, 31, 19, 5, 42)
 MILESTONE_ID = 5
 PROJECT_ID = 4
 PYTEST_FILE = """
-    from pytest_testrail.plugin import testrail, pytestrail
+    from pytest_rail.plugin import testrail, pytestrail
     @testrail('C1234', 'C5678')
     def test_func():
         pass

@@ -122,7 +122,7 @@ All available options
                            TestRail
      --tr-skip-missing     Skip test cases that are not present in testrun
 
-.. |Build Status| image:: https://travis-ci.org/allankp/pytest-testrail.svg?branch=master
-   :target: https://travis-ci.org/allankp/pytest-testrail
-.. |PyPI version| image:: https://badge.fury.io/py/pytest-testrail.svg
+.. |Build Status| image:: https://travis-ci.org/anukchat/pytest-rail.svg?branch=master
+   :target: https://travis-ci.org/anukchat/pytest-rail
+.. |PyPI version| image:: https://badge.fury.io/py/pytest-rail.svg
    :target: https://badge.fury.io/py/pytest-rail

@@ -19,14 +19,14 @@ all help:
 	@echo "$$HELP"
 
 clean:
-	rm -rf .cache .coverage .tox pytests_py*-test.xml pytest_testrail.egg-info pytest_testrail.txt pytests_coverage.xml
+	rm -rf .cache .coverage .tox pytests_py*-test.xml pytest_rail.egg-info pytest_rail.txt pytests_coverage.xml
 	find . -name '*.pyc' -delete
 
 coverage:
 	tox -e coverage
 
 lint:
-	flake8 pytest_testrail | tee pytest_testrail.txt
+	flake8 pytest_rail | tee pytest_rail.txt
 
 README.rst: README.md
 	pandoc --from=markdown --to=rst --output=README.rst README.md

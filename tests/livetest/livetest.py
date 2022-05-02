@@ -2,7 +2,7 @@
 import pytest
 import time
 
-from pytest_testrail.plugin import testrail, pytestrail
+from pytest_rail.plugin import testrail, pytestrail
 
 
 @testrail('C344', 'C366')

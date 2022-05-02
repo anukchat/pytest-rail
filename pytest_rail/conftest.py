@@ -157,7 +157,7 @@ def pytest_configure(config):
                 custom_comment=config_manager.getoption('tc-custom-comment', 'custom_comment', 'TESTCASE')
             ),
             # Name of plugin instance (allow to be used by other plugins)
-            name="pytest-testrail-instance"
+            name="pytest-rail-instance"
         )
 
 
