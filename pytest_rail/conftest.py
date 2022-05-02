@@ -145,7 +145,7 @@ def pytest_configure(config):
                                                      is_bool=True, default=False),
                 cert_check=config_manager.getoption('tr-no-ssl-cert-check', 'no_ssl_cert_check', 'API', is_bool=True,
                                                     default=True),
-                tr_name=config_manager.getoption('tr-testrun-name', 'name', 'TESTRUN')+datetime.utcnow().strftime(DT_FORMAT),,
+                tr_name=config_manager.getoption('tr-testrun-name', 'name', 'TESTRUN')+datetime.utcnow().strftime(DT_FORMAT),
                 tr_description=config_manager.getoption('tr-testrun-description', 'description', 'TESTRUN'),
                 run_id=config.getoption('--tr-run-id'),
                 plan_id=config_manager.getoption('tr-plan-id', 'plan_id', 'TESTRUN'),
