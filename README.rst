@@ -1,4 +1,4 @@
-pytest-testrail
+pytest-rail
 ===============
 
 |Build Status| |PyPI version|
@@ -12,7 +12,7 @@ Installation
 
 ::
 
-   pip install pytest-testrail
+   pip install pytest-rail
 
 Configuration
 -------------
@@ -24,7 +24,7 @@ Add a marker to the tests that will be picked up to be added to the run.
 
 .. code:: python
 
-   from pytest_testrail.plugin import testrail
+   from pytest_rail.plugin import testrail
 
    @testrail('C1234', 'C5678')
    def test_foo():
@@ -32,7 +32,7 @@ Add a marker to the tests that will be picked up to be added to the run.
 
    # OR    
 
-   from pytest_testrail.plugin import pytestrail
+   from pytest_rail.plugin import pytestrail
 
    @pytestrail.case('C1234', 'C5678')
    def test_bar():
@@ -125,4 +125,4 @@ All available options
 .. |Build Status| image:: https://travis-ci.org/allankp/pytest-testrail.svg?branch=master
    :target: https://travis-ci.org/allankp/pytest-testrail
 .. |PyPI version| image:: https://badge.fury.io/py/pytest-testrail.svg
-   :target: https://badge.fury.io/py/pytest-testrail
+   :target: https://badge.fury.io/py/pytest-rail

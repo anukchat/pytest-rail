@@ -1,7 +1,7 @@
-pytest-testrail
+pytest-rail
 ===============
 
-![](https://github.com/allankp/pytest-testrail/workflows/master/badge.svg)
+![](https://github.com/allankp/pytest-rail/workflows/master/badge.svg)
 [![PyPI version](https://badge.fury.io/py/pytest-testrail.svg)](https://badge.fury.io/py/pytest-testrail)
 [![Downloads](https://pepy.tech/badge/pytest-testrail)](https://pepy.tech/project/pytest-testrail)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/83b960043527429a8310cced2d8defcb)](https://www.codacy.com/manual/allankp/pytest-testrail?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=allankp/pytest-testrail&amp;utm_campaign=Badge_Grade)
@@ -12,7 +12,7 @@ The results of the collected tests will be updated against the testplan/testrun 
 Installation
 ------------
 
-    pip install pytest-testrail
+    pip install pytest-rail
 
 Configuration
 -------------
@@ -22,7 +22,7 @@ Configuration
 Add a marker to the tests that will be picked up to be added to the run.
 
 ```python
-    from pytest_testrail.plugin import testrail
+    from pytest_rail.plugin import testrail
 
     @testrail('C1234', 'C5678')
     def test_foo():
@@ -30,7 +30,7 @@ Add a marker to the tests that will be picked up to be added to the run.
 
     # OR	
 
-    from pytest_testrail.plugin import pytestrail
+    from pytest_rail.plugin import pytestrail
 
     @pytestrail.case('C1234', 'C5678')
     def test_bar():
@@ -41,7 +41,7 @@ Or if you want to add defects to testcase result:
 
 ```python
 
-    from pytest_testrail.plugin import pytestrail
+    from pytest_rail.plugin import pytestrail
 
     @pytestrail.defect('PF-524', 'BR-543')
     def test_bar():
